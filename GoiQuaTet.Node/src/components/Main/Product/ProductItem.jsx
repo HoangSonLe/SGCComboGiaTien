@@ -46,7 +46,7 @@ class ProductItem extends BaseConsumer {
     _handleClickAddToCart = (product, q) => {
         let cart = addProductInCart(product, q);
         this.updateObject(this.props.cartInform, cart);
-        this.success("Thêm thành công",2500)
+        this.success("Thêm thành công", 2500)
     }
     consumerContent() {
         const { classes, product } = this.props;
@@ -72,7 +72,7 @@ class ProductItem extends BaseConsumer {
                         </div>
                     </div>
                     <Box className={classes.divProductInfo}>
-                        <h3 className={classes.h3}><a>{product.combo.Name}</a></h3>
+                        <h3 className={classes.h3} textOverflow="ellipsis"><a>{product.combo.Name}</a></h3>
                         <h4>{formatMoney(product.combo.TotalPrice)}</h4>
                     </Box>
                 </Box>

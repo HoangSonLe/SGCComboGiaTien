@@ -104519,43 +104519,81 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
 
   var _super = _createSuper(Footer);
 
-  function Footer(props) {
-    var _this;
-
+  function Footer() {
     _classCallCheck(this, Footer);
 
-    _this = _super.call(this, props);
-    _this.state = {
-      value: 0
-    };
-    return _this;
+    return _super.apply(this, arguments);
   }
 
   _createClass(Footer, [{
     key: "consumerContent",
     value: function consumerContent() {
       var classes = this.props.classes;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
-        position: "static",
-        style: {
-          background: "#fff",
-          marginTop: 50,
-          boxShadow: "none"
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Toolbar"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: "div",
+        className: classes.root
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+        container: true,
+        spacing: 0
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
         item: true,
-        xs: 3
+        lg: 3,
+        md: 3,
+        sm: 6,
+        xs: 12,
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'block'
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "?"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/FooterCorner.jpg",
+        style: {
+          width: "110%",
+          height: "100%"
+        },
+        alt: "Logo"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
+        item: true,
+        sm: 6,
+        display: {
+          xs: 'block',
+          sm: 'block',
+          md: 'none'
+        },
+        style: {
+          textAlign: "center",
+          margin: "auto"
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "?"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/dist/contents/images/LogoCoop.png",
+        alt: "Logo"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
+        item: true,
+        sm: 6,
+        display: {
+          xs: 'none',
+          sm: 'block',
+          md: 'none'
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "?"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/dist/contents/images/FooterCorner2.jpg",
         alt: "Logo"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 5,
-        style: {
-          margin: "0 30px"
-        }
+        lg: 4,
+        md: 4,
+        sm: 6,
+        xs: 12
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.footerInfo
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "H\u1EC7 th\u1ED1ng si\xEAu th\u1ECB Co.opmart ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -104564,7 +104602,13 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
         className: classes.footerInfo
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "H\u1EC7 th\u1ED1ng si\xEAu th\u1ECB Co.opmart (Xem th\xF4ng tin li\xEAn h\u1EC7 t\u1EA1i \u0111\xE2y)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "T\u1ED5ng \u0111\xE0i CSKH: 1900.5555.68"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "chamsockhachhang@coopmart.vn")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 6
+        lg: 5,
+        md: 5,
+        sm: 6,
+        xs: 12,
+        style: {
+          position: "relative"
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.footerForm
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Ki\u1EC3m tra \u0111\u01A1n h\xE0ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
@@ -104596,7 +104640,19 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
           fontSize: "30px",
           margin: "0"
         }
-      })))))))));
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'block'
+        },
+        className: classes.ImageBottomConerRight
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "?"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "/dist/contents/images/FooterRightCorner.png",
+        alt: "Logo"
+      })))))));
     }
   }]);
 
@@ -104604,6 +104660,18 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
 }(BaseComponent_BaseConsumer__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 var styles = {
+  root: {
+    display: "flex",
+    background: "#fff",
+    marginTop: 50,
+    flexGrow: 1,
+    boxShadow: "none"
+  },
+  ImageBottomConerRight: {
+    right: "45px",
+    top: "200px",
+    position: "absolute"
+  },
   footerInfo: {
     color: "#133C8B",
     "& ul": {
@@ -104723,7 +104791,8 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 1,
+        sm: 1,
+        xs: 0,
         style: {
           maxWidth: 80
         }
@@ -104732,7 +104801,8 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
         alt: ""
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 2,
+        sm: 2,
+        xs: 12,
         style: {
           maxWidth: 200
         }
@@ -104748,11 +104818,13 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
         alt: "Logo"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 10,
+        sm: 10,
+        xs: 12,
         className: classes.middleHeader
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 11,
+        sm: 11,
+        xs: 12,
         className: classes.gridNavLink
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         className: classes.divNavLink,
@@ -104771,7 +104843,8 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
         }
       }, "Ki\u1EC3m tra \u0111\u01A1n h\xE0ng")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 1,
+        sm: 1,
+        xs: 12,
         style: {
           maxWidth: 80
         },
@@ -104783,7 +104856,8 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
         className: classes.iconLogin
       })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        xs: 1,
+        sm: 1,
+        xs: 0,
         style: {
           maxWidth: 80
         }

@@ -51,7 +51,7 @@ class Product extends BaseConsumer {
         let ele = '';
         let pagination = "";
         if (productList !== undefined && productList !== null && Object.keys(productList).length > 0) {
-            ele = productList.comboInformList.map((e,index) => {
+            ele = productList.comboInformList.map((e, index) => {
                 return (
                     <ProductItem
                         cartInform={cartInform}
@@ -70,7 +70,7 @@ class Product extends BaseConsumer {
         return (
             <>
                 <Container><ProductMenu productMenuList={productMenuList} handleSearch={this._handleSearch} handleClickProductMenu={this._handleClickProductMenu}></ProductMenu></Container>
-                <Container>
+                <Container style={{ textAlign: "center" }}>
                     {ele}
                 </Container>
                 <Container>{pagination}</Container>

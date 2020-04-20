@@ -19,21 +19,21 @@ class Header extends BaseConsumer {
         return (
             <AppBar position="static" style={{ background: "#fff" }}>
                 <Toolbar style={{ padding: 0 }}>
-                    <Grid item xs={1} style={{ maxWidth: 80 }} >
+                    <Grid item sm={1} xs={0} style={{ maxWidth: 80 }} >
                         <img src="/dist/contents/images/LeftCorner.png" alt=""></img>
                     </Grid>
-                    <Grid item xs={2} style={{ maxWidth: 200 }} >
+                    <Grid item sm={2} xs={12} style={{ maxWidth: 200 }} >
                         {/* <NavLink style={{ cursor: "pointer" }} exact to='/'><img src="/dist/contents/images/LogoCoop.png" alt="Logo"></img></NavLink> */}
                         <a
                             style={{ cursor: "pointer" }}
                             onClick={() => { this.goTo("/") }}
-                            >
+                        >
                             <img src="/dist/contents/images/LogoCoop.png" alt="Logo">
                             </img>
                         </a>
                     </Grid>
-                    <Grid item xs={10} className={classes.middleHeader}>
-                        <Grid item xs={11} className={classes.gridNavLink}>
+                    <Grid item sm={10} xs={12} className={classes.middleHeader}>
+                        <Grid item sm={11} xs={12} className={classes.gridNavLink}>
                             <a
                                 className={classes.divNavLink}
                                 onClick={() => { this.goTo("/huong-dan-mua-hang") }}
@@ -51,12 +51,12 @@ class Header extends BaseConsumer {
                             <NavLink className={classes.divNavLink} activeStyle={{color: '#133C8B' ,borderBottom:"3px solid red"}}  isActive={isActive.bind(this, '/kiem-tra-don-hang')} to="/kiem-tra-don-hang">Kiểm tra đơn hàng</NavLink> */}
                         </Grid>
 
-                        <Grid item xs={1} style={{ maxWidth: 80 }} className={classes.cartBox}>
+                        <Grid item sm={1} xs={12} style={{ maxWidth: 80 }} className={classes.cartBox}>
                             <Cart cartInform={cartInform}></Cart>
                             <a><PersonIcon color="action" className={classes.iconLogin} ></PersonIcon></a>
                         </Grid>
                     </Grid>
-                    <Grid item xs={1} style={{ maxWidth: 80 }}  >
+                    <Grid item sm={1} xs={0} style={{ maxWidth: 80 }}  >
                         <img src="/dist/contents/images/RightCorner.png" alt="Logo"></img>
                     </Grid>
                 </Toolbar>
