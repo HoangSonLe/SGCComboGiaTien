@@ -72,7 +72,7 @@ class ProductItem extends BaseConsumer {
                         </div>
                     </div>
                     <Box className={classes.divProductInfo}>
-                        <h3 className={classes.h3} textOverflow="ellipsis"><a>{product.combo.Name}</a></h3>
+                        <h3 className={classes.h3}><a>{product.combo.Name}</a></h3>
                         <h4>{formatMoney(product.combo.TotalPrice)}</h4>
                     </Box>
                 </Box>

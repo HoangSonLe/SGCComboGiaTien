@@ -37460,6 +37460,35 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "../../../i3source/CleanNode/node_modules/@material-ui/icons/Menu.js":
+/*!*********************************************************************!*\
+  !*** E:/i3source/CleanNode/node_modules/@material-ui/icons/Menu.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../../../i3source/CleanNode/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "../../../i3source/CleanNode/node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "../../../i3source/CleanNode/node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+}), 'Menu');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "../../../i3source/CleanNode/node_modules/@material-ui/icons/Person.js":
 /*!***********************************************************************!*\
   !*** E:/i3source/CleanNode/node_modules/@material-ui/icons/Person.js ***!
@@ -104552,7 +104581,7 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/FooterCorner.jpg",
         style: {
-          width: "110%",
+          width: "100%",
           height: "100%"
         },
         alt: "Logo"
@@ -104587,6 +104616,10 @@ var Footer = /*#__PURE__*/function (_BaseConsumer) {
         href: "?"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/FooterCorner2.jpg",
+        style: {
+          width: "100%",
+          height: "100%"
+        },
         alt: "Logo"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
@@ -104723,10 +104756,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var BaseComponent_BaseConsumer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! BaseComponent/BaseConsumer */ "../../../i3source/CleanNode/src/BaseComponent/BaseConsumer.jsx");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "../../../i3source/CleanNode/node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Person */ "../../../i3source/CleanNode/node_modules/@material-ui/icons/Person.js");
-/* harmony import */ var _material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Main_Cart_Cart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Main/Cart/Cart */ "./src/components/Main/Cart/Cart.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../../../i3source/CleanNode/node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Menu */ "../../../i3source/CleanNode/node_modules/@material-ui/icons/Menu.js");
+/* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Person */ "../../../i3source/CleanNode/node_modules/@material-ui/icons/Person.js");
+/* harmony import */ var _material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Main_Cart_Cart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Main/Cart/Cart */ "./src/components/Main/Cart/Cart.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "../../../i3source/CleanNode/node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -104749,6 +104784,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -104761,110 +104799,286 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
 
   var _super = _createSuper(Header);
 
-  function Header() {
+  function Header(props) {
+    var _this;
+
     _classCallCheck(this, Header);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "isActive", function (match) {
+      console.log("path", match);
+      return match === _this.props.hist.location.pathname;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleOpenMenu", function (e) {
+      _this.setState({
+        open: !_this.state.open,
+        anchorEl: e.currentTarget
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleCloseMenu", function () {
+      _this.setState({
+        anchorEl: null,
+        open: !_this.state.open
+      });
+    });
+
+    _this.state = {
+      value: 3,
+      open: false,
+      anchorEl: null
+    };
+    return _this;
   }
 
   _createClass(Header, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var path = this.props.hist.location.pathname;
+
+      if (path == "/huong-dan-mua-hang") {
+        this.setState({
+          value: 0
+        });
+      } else if (path == "/chinh-sach-giao-hang") {
+        this.setState({
+          value: 1
+        });
+      } else if (path == "/kiem-tra-don-hang") {
+        this.setState({
+          value: 2
+        });
+      } else {
+        this.setState({
+          value: 3
+        });
+      }
+    }
+  }, {
     key: "consumerContent",
     value: function consumerContent() {
-      var _this = this;
+      var _this2 = this;
 
       var _this$props = this.props,
           classes = _this$props.classes,
           cartInform = _this$props.cartInform;
-
-      var isActive = function isActive(path, match, location) {
-        return !!(match || path === location.pathname);
-      };
-
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
-        position: "static",
+      var _this$state = this.state,
+          value = _this$state.value,
+          open = _this$state.open,
+          anchorEl = _this$state.anchorEl;
+      console.log("value", value);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
         style: {
-          background: "#fff"
+          display: "flex",
+          boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)"
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Toolbar"], {
-        style: {
-          padding: 0
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"],
+        xs: 1,
+        edge: "start",
+        className: classes.menuButton,
+        color: "inherit",
+        display: {
+          xs: 'block',
+          sm: 'block',
+          md: 'block',
+          lg: 'none'
+        },
+        onClick: function onClick(e) {
+          return _this2.handleOpenMenu(e);
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        className: classes.menuIcon
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Backdrop"], {
+        className: classes.backdrop,
+        open: open
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
+        anchorEl: anchorEl,
+        open: Boolean(anchorEl),
+        getContentAnchorEl: null,
+        anchorOrigin: {
+          vertical: 'bottom',
+          horizontal: 'center'
+        },
+        transformOrigin: {
+          vertical: 'top',
+          horizontal: 'center'
+        },
+        onClose: function onClose() {
+          return _this2.handleCloseMenu();
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+        onClick: function onClick() {
+          _this2.setState({
+            value: 0
+          });
+
+          _this2.goTo("/huong-dan-mua-hang");
+
+          _this2.handleCloseMenu();
+        }
+      }, "H\u01B0\u1EDBng d\u1EABn mua h\xE0ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+        onClick: function onClick() {
+          _this2.setState({
+            value: 1
+          });
+
+          _this2.goTo("/chinh-sach-giao-hang");
+
+          _this2.handleCloseMenu();
+        }
+      }, "Ch\xEDnh s\xE1ch giao h\xE0ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+        onClick: function onClick() {
+          _this2.setState({
+            value: 2
+          });
+
+          _this2.goTo("/kiem-tra-don-hang");
+
+          _this2.handleCloseMenu();
+        }
+      }, "Ki\u1EC3m tra \u0111\u01A1n h\xE0ng")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
         item: true,
-        sm: 1,
-        xs: 0,
+        lg: 1,
         style: {
           maxWidth: 80
+        },
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/LeftCorner.png",
         alt: ""
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        sm: 2,
-        xs: 12,
+        lg: 2,
+        xs: 10,
         style: {
-          maxWidth: 200
+          textAlign: "center"
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         style: {
           cursor: "pointer"
         },
         onClick: function onClick() {
-          _this.goTo("/");
+          _this2.setState({
+            value: 3
+          });
+
+          _this2.goTo("/");
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/LogoCoop.png",
         alt: "Logo"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
         item: true,
-        sm: 10,
-        xs: 12,
-        className: classes.middleHeader
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+        lg: 8,
+        className: classes.middleHeader,
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
         item: true,
-        sm: 11,
-        xs: 12,
+        lg: 12,
         className: classes.gridNavLink
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tabs"],
+        value: value
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"],
+        label: "H\u01B0\u1EDBng d\u1EABn mua h\xE0ng" // style={this.isActive('/huong-dan-mua-hang') ? { color: "#133C8B", borderBottom: "3px solid red" } : {}}
+        ,
         className: classes.divNavLink,
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
+        },
         onClick: function onClick() {
-          _this.goTo("/huong-dan-mua-hang");
+          _this2.setState({
+            value: 0
+          });
+
+          _this2.goTo("/huong-dan-mua-hang");
         }
-      }, "H\u01B0\u1EDBng d\u1EABn mua h\xE0ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: classes.divNavLink,
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"],
+        label: "Ch\xEDnh s\xE1ch giao h\xE0ng",
+        className: classes.divNavLink // style={this.isActive('/chinh-sach-giao-hang') ? { color: "#133C8B", borderBottom: "3px solid red" } : {}}
+        ,
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
+        },
         onClick: function onClick() {
-          _this.goTo("/chinh-sach-giao-hang");
+          _this2.setState({
+            value: 1
+          });
+
+          _this2.goTo("/chinh-sach-giao-hang");
         }
-      }, "Ch\xEDnh s\xE1ch giao h\xE0ng"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: classes.divNavLink,
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"],
+        label: "Ki\u1EC3m tra \u0111\u01A1n h\xE0ng",
+        className: classes.divNavLink // style={this.isActive('/kiem-tra-don-hang') ? { color: "#133C8B", borderBottom: "3px solid red" } : {}}
+        ,
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
+        },
         onClick: function onClick() {
-          _this.goTo("/kiem-tra-don-hang");
+          _this2.setState({
+            value: 2
+          });
+
+          _this2.goTo("/kiem-tra-don-hang");
         }
-      }, "Ki\u1EC3m tra \u0111\u01A1n h\xE0ng")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"],
+        display: "none"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
         item: true,
-        sm: 1,
-        xs: 12,
+        lg: 1,
+        xs: 2,
+        className: classes.cartBox
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_Cart_Cart__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        cartInform: cartInform
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        color: "action",
+        className: classes.iconLogin
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+        component: _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"],
+        item: true,
+        lg: 1,
         style: {
           maxWidth: 80
         },
-        className: classes.cartBox
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main_Cart_Cart__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        cartInform: cartInform
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Person__WEBPACK_IMPORTED_MODULE_3___default.a, {
-        color: "action",
-        className: classes.iconLogin
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-        item: true,
-        sm: 1,
-        xs: 0,
-        style: {
-          maxWidth: 80
+        display: {
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'block'
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: "/dist/contents/images/RightCorner.png",
         alt: "Logo"
-      }))));
+      })));
     }
   }]);
 
@@ -104872,6 +105086,13 @@ var Header = /*#__PURE__*/function (_BaseConsumer) {
 }(BaseComponent_BaseConsumer__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 var styles = {
+  menuButton: {
+    margin: "20px"
+  },
+  menuIcon: {
+    border: "2px solid #1f1717",
+    padding: 5
+  },
   gridNavLink: {
     display: "flex",
     justifyContent: "flex-end",
@@ -104880,7 +105101,7 @@ var styles = {
   },
   divNavLink: {
     fontFamily: "Roboto,sans-serif",
-    fontSize: 18,
+    fontSize: 17,
     lineHeight: "30px",
     fontWeight: 600,
     padding: "10px 18px",
@@ -104888,7 +105109,10 @@ var styles = {
     textDecoration: "none",
     color: "#607cb3",
     textAlign: 'center',
-    cursor: "pointer"
+    cursor: "pointer",
+    "& .Mui-selected": {
+      color: "red"
+    }
   },
   iconLogin: {
     padding: "10px 0px 5px",
@@ -104900,7 +105124,8 @@ var styles = {
   },
   cartBox: {
     maxHeight: 55,
-    margin: "10px 10px 0 10px"
+    margin: "25px 0 10px",
+    maxWidth: 80
   },
   middleHeader: {
     background: "url('/dist/Contents/images/MiddleHeader.png')",
@@ -104908,6 +105133,10 @@ var styles = {
     display: "flex",
     justifyContent: "flex-end",
     height: 100
+  },
+  backdrop: {
+    zIndex: 99,
+    color: '#fff'
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(styles)(Header));

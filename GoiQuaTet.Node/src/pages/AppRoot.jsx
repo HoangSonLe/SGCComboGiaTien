@@ -9,9 +9,6 @@ import CartCheckout from '../components/Main/Cart/CartCheckout'
 import ContentPolicy from '../components/Main/ContentPolicy'
 import ContentGuide from '../components/Main/ContentGuide'
 import CheckOrder from '../components/Main/CheckOrder'
-import MainContentWrapper from '../components/Main/MainContentWrapper'
-import ContentGuideWrapper from '../components/Main/ContentGuideWrapper'
-// import ContentPolicyWrapper from '../components/Main/ContentPolicyWrapper'
 import {
     Route,
     // BrowserRouter as Router,
@@ -56,7 +53,7 @@ export default class AppRoot extends BaseRouterPage {
         let { productList, cartInform, productMenuList } = this.state;
         return (
             <Router history={hist}>
-                <Header cartInform={cartInform}></Header>
+                <Header cartInform={cartInform} hist={hist}></Header>
                 <Route exact path="/">
                     <MainContent cartInform={cartInform} productMenuList={productMenuList} productList={productList}></MainContent>
                 </Route>

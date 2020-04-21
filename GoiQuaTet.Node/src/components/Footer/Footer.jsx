@@ -16,7 +16,7 @@ class Footer extends BaseConsumer {
                         lg={3} md={3} sm={6} xs={12}
                         display={{ xs: 'none', sm: 'none', md: 'block' }}>
                         <a href='?' >
-                            <img src="/dist/contents/images/FooterCorner.jpg" style={{ width: "110%", height: "100%" }} alt="Logo"></img>
+                            <img src="/dist/contents/images/FooterCorner.jpg" style={{ width: "100%", height: "100%" }} alt="Logo"></img>
                         </a>
                     </Box>
                     <Box
@@ -36,7 +36,7 @@ class Footer extends BaseConsumer {
                         sm={6}
                         display={{ xs: 'none', sm: 'block', md: 'none' }}>
                         <a href='?' >
-                            <img src="/dist/contents/images/FooterCorner2.jpg" alt="Logo"></img>
+                            <img src="/dist/contents/images/FooterCorner2.jpg" style={{ width: "100%", height: "100%" }} alt="Logo"></img>
                         </a>
                     </Box>
                     <Grid item lg={4} md={4} sm={6} xs={12}>

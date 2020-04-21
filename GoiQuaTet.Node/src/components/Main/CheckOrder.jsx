@@ -53,10 +53,32 @@ class CheckOrder extends BaseConsumer {
         return (
             <Container className={classes.container}>
                 <Box>
-                    <Grid container>
-                        <Grid item container xs={4} className={classes.formGroup}>
-                            <Grid item container xs={5} className="fieldText"> Mã đơn hàng:</Grid>
-                            <Grid item container xs={7}>
+                    <Grid container className={classes.formGroup}>
+                        <Grid item lg={2} sm={3} xs={12} className="fieldText"><p> Mã đơn hàng:</p></Grid>
+                        <Grid item lg={3} sm={8} xs={12}>
+                            <TextField
+                                variant="outlined"
+                                color="primary"
+                                type="number"
+                                fullWidth
+                                className={classes.inputText}
+                                onBlur={(e) => { this.setState({ orderId: (event.target.value !== "") ? event.target.value : 0 }) }}
+                            />
+                            <p style={{ color: 'rgb(153, 153, 153)' }}>(Vui lòng nhập đầy đủ 02 thông tin trên)</p>
+                        </Grid>
+                        <Grid item lg={2} sm={3} xs={12} className="fieldText"> <p>Email khách đặt hàng:</p></Grid>
+                        <Grid item lg={4} sm={8} xs={12}>
+                            <TextField
+                                variant="outlined"
+                                color="primary"
+                                className="fieldInput"
+                                type="email"
+                                onBlur={(e) => { this.setState({ email: event.target.value }) }}
+                            />
+                        </Grid>
+                        {/* <Grid item lg={4} sm={12} xs={12} className={classes.formGroup}>
+                            <Grid item sm={3} xs={12} className="fieldText"><p> Mã đơn hàng:</p></Grid>
+                            <Grid item sm={9} xs={12}>
                                 <TextField
                                     variant="outlined"
                                     color="primary"
@@ -65,11 +87,12 @@ class CheckOrder extends BaseConsumer {
                                     className={classes.inputText}
                                     onBlur={(e) => { this.setState({ orderId: (event.target.value !== "") ? event.target.value : 0 }) }}
                                 />
+                                <i style={{ color: 'rgb(153, 153, 153)' }}>(Vui lòng nhập đầy đủ 02 thông tin trên)</i>
                             </Grid>
                         </Grid>
-                        <Grid item container xs={8} className={classes.formGroup}>
-                            <Grid item container xs={3} className="fieldText"> Email khách đặt hàng</Grid>
-                            <Grid item container xs={9}>
+                        <Grid item lg={8} sm={12} xs={12} className={classes.formGroup}>
+                            <Grid item sm={3} xs={12} className="fieldText"> <p>Email khách đặt hàng:</p></Grid>
+                            <Grid item sm={9} xs={12}>
                                 <TextField
                                     variant="outlined"
                                     color="primary"
@@ -78,14 +101,10 @@ class CheckOrder extends BaseConsumer {
                                     onBlur={(e) => { this.setState({ email: event.target.value }) }}
                                 />
                             </Grid>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Box>
-                <Container>
-                    <i style={{ color: 'rgb(153, 153, 153)' }}>(Vui lòng nhập đầy đủ 02 thông tin trên)</i>
-                </Container>
-                <Grid container justify='center' style={{ marginBottom: 10 }}><Button variant="contained" color="primary" onClick={() => { this._handleClickSearchOrder() }}>KIỂM TRA ĐƠN HÀNG</Button></Grid>
-                
+                <Button style={{ margin: 10, cursor: "pointer" }} variant="contained" color="primary" onClick={() => { this._handleClickSearchOrder() }}>KIỂM TRA ĐƠN HÀNG</Button>
                 {eleBill}
 
             </Container>
@@ -94,15 +113,19 @@ class CheckOrder extends BaseConsumer {
 }
 const Styles = {
     container: {
-        marginTop: 30
+        marginTop: 30,
+        textAlign: "center"
     },
     formGroup: {
         maxWidth: '100%',
+        display: "flex",
+        margin: "10px 0px",
         '& > .fieldText': {
             alignItems: 'center',
             justifyContent: 'center',
             color: 'blue',
-            fontSize: 'larger'
+            fontSize: 'larger',
+            margin: "0px 10px",
         },
         '& .fieldInput': {
             width: '100%'
