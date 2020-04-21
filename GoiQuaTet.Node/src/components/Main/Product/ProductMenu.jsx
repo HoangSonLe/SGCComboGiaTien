@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseConsumer from 'BaseComponent/BaseConsumer'
 import ShouldUpdateWrapper from 'BaseComponent/ShouldUpdateWrapper'
-import { withStyles, Toolbar, Grid, Tab, Tabs, Select, MenuItem, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton } from '@material-ui/core'
+import { withStyles, Toolbar, Box, Grid, Tab, Tabs, Select, MenuItem, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton } from '@material-ui/core'
 
 import SearchIcon from '@material-ui/icons/Search';
 class ProductMenu extends BaseConsumer {
@@ -31,7 +31,7 @@ class ProductMenu extends BaseConsumer {
         }
         return (
             <Toolbar style={{ margin: "10px 0 20px", padding: 0, borderBottom: "2px solid #e1e1e1", display: "flex" }}>
-                <Grid item xs={9} className={classes.gridNavLink} >
+                <Grid item lg={7} xs={12} className={classes.gridNavLink} >
                     <Tabs
                         value={value}
                         onChange={(e, value) => { this._handleChangeMenu(e, value) }}
@@ -40,47 +40,49 @@ class ProductMenu extends BaseConsumer {
                         {ele}
                     </Tabs>
                 </Grid>
-                <Grid item xs={3} style={{ display: "flex", justifyContent: "flex-end" }}>
-                    <FormControl variant="outlined">
-                        <InputLabel htmlFor="outlined-adornment-password" style={{ top: -4 }}>Tìm sản phẩm</InputLabel>
-                        <ShouldUpdateWrapper
-                            onChange={(e) => { this._handleChangeInput(e) }}
+                <Box component={Grid} item lg={5} display={{ xs: 'none', md: 'block' }}>
+                    <Box style={{ display: "flex", justifyContent: "flex-end" }}>
+                        <FormControl variant="outlined">
+                            <InputLabel htmlFor="outlined-adornment-password" style={{ top: -4 }}>Tìm sản phẩm</InputLabel>
+                            <ShouldUpdateWrapper
+                                onChange={(e) => { this._handleChangeInput(e) }}
+                            >
+                                <OutlinedInput
+                                    style={{ height: 48 }}
+                                    id="outlined-adornment-password"
+
+                                    size="small"
+                                    inputProps={{
+                                        padding: 0,
+                                    }}
+                                    endAdornment={
+                                        <InputAdornment position="end">
+                                            <IconButton
+                                                aria-label="toggle password visibility"
+                                                edge="end"
+                                                onClick={() => handleSearch(this.valueInputFind)}
+                                            >
+                                                <SearchIcon></SearchIcon>
+                                            </IconButton>
+                                        </InputAdornment>
+                                    }
+                                    labelWidth={100}
+                                />
+                            </ShouldUpdateWrapper>
+                        </FormControl>
+                        <Select
+                            value={1}
+                            input={<OutlinedInput />}
+                            style={{ height: 48, width: "50%", margin: "0 10px" }}
+                            onChange={(e) => this.handleChange(e)}
                         >
-                            <OutlinedInput
-                                style={{ height: 48 }}
-                                id="outlined-adornment-password"
+                            <MenuItem value={1}>A-Z</MenuItem>
+                            <MenuItem value={2}>B</MenuItem>
+                            <MenuItem value={3}>C</MenuItem>
+                        </Select>
 
-                                size="small"
-                                inputProps={{
-                                    padding: 0,
-                                }}
-                                endAdornment={
-                                    <InputAdornment position="end">
-                                        <IconButton
-                                            aria-label="toggle password visibility"
-                                            edge="end"
-                                            onClick={() => handleSearch(this.valueInputFind)}
-                                        >
-                                            <SearchIcon></SearchIcon>
-                                        </IconButton>
-                                    </InputAdornment>
-                                }
-                                labelWidth={100}
-                            />
-                        </ShouldUpdateWrapper>
-                    </FormControl>
-                    <Select
-                        value={1}
-                        input={<OutlinedInput />}
-                        style={{ height: 48,width:"30%", margin: "0 10px" }}
-                        onChange={(e) => this.handleChange(e)}
-                    >
-                        <MenuItem value={1}>A-Z</MenuItem>
-                        <MenuItem value={2}>B</MenuItem>
-                        <MenuItem value={3}>C</MenuItem>
-                    </Select>
-                </Grid>
-
+                    </Box>
+                </Box>
             </Toolbar>
         );
 

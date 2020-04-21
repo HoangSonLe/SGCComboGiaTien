@@ -104697,6 +104697,7 @@ var styles = {
     display: "flex",
     background: "#fff",
     marginTop: 50,
+    marginBottom: 20,
     flexGrow: 1,
     boxShadow: "none"
   },
